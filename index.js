@@ -14,6 +14,4 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(8021,'0.0.0.0', function(){
-      console.log('listening on *:8021');
-});
+http.listen(process.env.PORT || 8023);
